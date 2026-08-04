@@ -73,8 +73,8 @@ app.get('/api/dashboard/overview', async (c) => {
 });
 
 app.get('/api/dashboard/member-growth', async (c) => {
-  const result = await c.env.DB.prepare(`SELECT date,totalMembers,joined,left FROM (
-    SELECT metric_date date,total_members totalMembers,joined_count joined,left_count left
+  const result = await c.env.DB.prepare(`SELECT date,totalMembers,joined,"left" FROM (
+    SELECT metric_date date,total_members totalMembers,joined_count joined,left_count AS "left"
     FROM daily_chat_metrics ORDER BY metric_date DESC LIMIT 30
   ) ORDER BY date ASC`).all();
   return c.json({ data: result.results });
