@@ -4,6 +4,6 @@
   "main": "worker/index.ts",
   "compatibility_date": "2025-07-26",
   "assets": { "not_found_handling": "single-page-application" },
-  "d1_databases": [{ "binding": "DB", "database_name": "telegram-analytics", "database_id": "00000000-0000-0000-0000-000000000000", "migrations_dir": "migrations" }],
+  "d1_databases": [{ "binding": "DB", "database_name": "telegram-analytics", "database_id": "c75fcd3a-ff46-4a9a-bdc3-0e1a7f67d714", "migrations_dir": "migrations" }],
   "vars": { "APP_TIMEZONE": "Asia/Ho_Chi_Minh" }
 }
